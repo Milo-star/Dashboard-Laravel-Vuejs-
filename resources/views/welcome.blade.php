@@ -7,7 +7,7 @@
         <title>Dashboard</title>
 
         <!-- Styles -->
-        @Vite(['resources/css/app.css', 'resources/js/app.js'])
+        @Vite(['resources/js/app.js'])
     </head>
     <body id="dashboard">
         

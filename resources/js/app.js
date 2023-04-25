@@ -1,4 +1,5 @@
 import './bootstrap';
+import '../css/app.css';
 
 // install vue 3 
 import { createApp } from 'vue'
