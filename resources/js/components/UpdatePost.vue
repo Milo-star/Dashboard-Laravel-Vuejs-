@@ -22,7 +22,14 @@
 
 <script setup>
 
-import { reactive, ref } from 'vue'
+import { onMounted, reactive, ref, watch } from 'vue'
+
+const props = defineProps({
+    post: {
+        type: Object,
+        required: true
+    }
+})
 
 const dialog = ref(false)
 
@@ -32,8 +39,14 @@ const inputs = reactive({
     body: "",
 })
 
-const createPost = () => {
+const updatePost = () => {
     dialog.value = false;
+}
+
+onMounted(() => {
+    inputs.title = props.post.title
+    inputs.slug = props.post.slug
+    inputs.body = props.post.body
 }
 
 </script>
