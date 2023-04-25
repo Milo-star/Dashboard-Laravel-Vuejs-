@@ -4,6 +4,7 @@
         model-value
         class="pt-4"
         color="grey-lighten-3"
+        width="200"
       >
         <v-avatar class="d-block text-center mx-auto mb-9"> </v-avatar>
         <v-list>
