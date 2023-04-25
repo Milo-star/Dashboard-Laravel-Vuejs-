@@ -32,6 +32,7 @@ import { ref } from 'vue'
 
 const links = ref([
   { text: 'Home', route: 'home', icon: 'mdi-home' },
+  { text: 'Posts', route: 'posts', icon: 'mdi-file-document' },
   { text: 'About', route: 'about', icon: 'mdi-help-circle' },
 ])
 
