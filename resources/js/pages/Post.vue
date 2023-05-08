@@ -36,8 +36,8 @@
 
     import { ref } from 'vue'
     import CreatePost from '../components/CreatePost.vue'
-import DeletePost from '../components/DeletePost.vue';
-import UpdatePost from '../components/UpdatePost.vue';
+    import DeletePost from '../components/DeletePost.vue';
+    import UpdatePost from '../components/UpdatePost.vue';
 
     const posts = ref([
         { slug: 'post-1', title: 'Post 1', updated_at: '2023-04-25' },
