@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-    baseURL: `${window.location.protocol}//${window.location.host}/api}`,
+    baseURL: `${window.location.protocol}//${window.location.host}/api/}`,
     headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
