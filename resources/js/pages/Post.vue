@@ -17,7 +17,7 @@
     </thead>
     <tbody>
       <tr
-        v-for="({slug, title, updated_at}, index) in posts"
+        v-for="({id, slug, title, updated_at}, index) in posts"
         :key="index"
       >
         <td>{{ slug }}</td>
@@ -25,7 +25,8 @@
         <td>{{ updated_at }}</td>
         <td class="flex justify-end items-center gap-2">
             <v-btn size="small" color="primary" icon="mdi-pencil"></v-btn>
-            <v-btn size="small" color="error" icon="mdi-delete"></v-btn>
+            <update-post :post="id" />
+            <delete-post :post="id" />
         </td>
       </tr>
     </tbody>
@@ -36,6 +37,8 @@
 
     import { ref } from 'vue'
     import CreatePost from '../components/CreatePost.vue'
+import DeletePost from '../components/DeletePost.vue';
+import UpdatePost from '../components/UpdatePost.vue';
 
     const posts = ref([
         { slug: 'post-1', title: 'Post 1', updated_at: '2023-04-25' },
