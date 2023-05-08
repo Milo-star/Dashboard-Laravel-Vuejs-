@@ -5,6 +5,8 @@
             <create-post/>
         </div>
     </v-card>
+    <v-progress-linear color="blue-lighten-3" indeterminate :height="2"></v-progress-linear>
+
 
     <v-table>
     <thead>

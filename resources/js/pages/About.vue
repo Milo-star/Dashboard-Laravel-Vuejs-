@@ -4,6 +4,7 @@
             <h1 class="flex-1">About</h1>
         </div>
     </v-card>
+    <v-progress-linear color="blue-lighten-3" indeterminate :height="2"></v-progress-linear>
 
     <v-card-text>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet incidunt ut repudiandae at atque ipsam? Obcaecati recusandae sit odio quae amet exercitationem eveniet quasi eius tempore, modi, facilis nemo distinctio.
