@@ -9,7 +9,7 @@
             Are you sure you want to delete this post?
         </v-card-text>
         <v-card-actions>
-          <v-btn color="primary" block @click="dialog = false">Cancel</v-btn>
+            <v-btn color="error" block @click="deletePost">Delete</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>

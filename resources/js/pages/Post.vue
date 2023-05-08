@@ -24,9 +24,8 @@
         <td>{{ title }}</td>
         <td>{{ updated_at }}</td>
         <td class="flex justify-end items-center gap-2">
-            <v-btn size="small" color="primary" icon="mdi-pencil"></v-btn>
-            <update-post :post="id" />
-            <delete-post :post="id" />
+            <update-post :post="index" />
+            <delete-post :post="index" />
         </td>
       </tr>
     </tbody>

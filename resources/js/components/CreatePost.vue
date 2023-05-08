@@ -10,7 +10,7 @@
                 <v-text-field v-model="inputs.title" label="Title" />
                 <v-text-field v-model="inputs.slug" label="Slug" />
                 <v-textarea v-model="inputs.body" label="Article" />
-                <v-btn color="primary" @click="createPost">Create</v-btn>
+                <v-btn color="primary" block @click="createPost">Create</v-btn>
             </v-form>
         </v-card-text>
         <v-card-actions>
